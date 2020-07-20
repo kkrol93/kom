@@ -1,9 +1,9 @@
 ## About Project
 
-This is my Portfolio!
+This is my portfolio!
 REACT + REDUX
 
-### `How install and run?`
+### `How to run the application?`
 
 1. "npm install",
 2. "npm start",
