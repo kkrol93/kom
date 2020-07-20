@@ -1,0 +1,143 @@
+.admin {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  a,
+  button {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    div {
+      background-color: #555;
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 20px 50px;
+    }
+  }
+}
+.add__website {
+  padding: 100px 10px;
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  form {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    background: #555;
+    padding: 40px 20px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    label {
+      width: 100%;
+      font-size: 12px;
+    }
+    input {
+      width: 100%;
+      margin-bottom: 20px;
+      border: none;
+      border-bottom: 2px solid #9c1212;
+      background: transparent;
+      color: #fff;
+      padding: 5px 0;
+    }
+    .error {
+      width: 100%;
+      padding: 5px 0px;
+    }
+    button {
+      background-color: transparent;
+      border: 2px solid #9c1212;
+      padding: 5px 15px;
+      color: #fff;
+    }
+  }
+}
+.login {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  h1 {
+    margin-bottom: 20px;
+  }
+  form {
+    max-width: 400px;
+    width: 100%;
+    background-color: #555;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    label {
+      width: 100%;
+    }
+    input {
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid #9c1212;
+      margin-bottom: 15px;
+      color: #fff;
+      font-size: 18px;
+    }
+    button {
+      border: 2px solid #9c1212;
+      padding: 5px 15px;
+      background-color: transparent;
+      color: #fff;
+      transition: all 0.3s linear;
+      margin: 10px 0 10px auto;
+      display: block;
+      &:hover {
+        background-color: #9c1212;
+      }
+    }
+  }
+}
+.admin__buttons {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+
+  a,
+  button {
+    border: 2px solid green;
+    padding: 5px 15px;
+    margin: 0 10px;
+    transition: all 0.3s linear;
+    &:hover {
+      background-color: green;
+    }
+  }
+  button {
+    border: 2px solid #9c1212;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+      background-color: #9c1212;
+    }
+  }
+}
+.websites.skills-admin {
+  .websites__list {
+    div {
+      background-color: transparent;
+      box-shadow: none;
+      img {
+        height: 100px;
+        width: auto;
+      }
+    }
+  }
+}

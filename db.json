@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "email": "k@k.pl",
+      "password": "$2a$10$qe4l3BR3Rma6YL2ls7InJuL7xcobpmTXtKx4tPQnsR4vunAAAHq2K",
+      "id": 1
+    }
+  ],
+  "websites": [
+    {
+      "id": 1,
+      "img": "/assets/images/nnwf.jpg",
+      "name": "Niezbędnik Nauczyciela WF",
+      "link": "https://niezbedniknauczycielawf.pl/",
+      "code": "React"
+    },
+    {
+      "link": "https://ochronaprzeciwpozarowa.pl/",
+      "img": "/assets/images/ochrona.jpg",
+      "name": "Ochrona Przeciwpożarowa",
+      "code": "WordPress/WooCommerce",
+      "id": 3
+    }
+  ],
+  "skills": [
+    {
+      "id": 0,
+      "img": "/assets/images/front.png",
+      "name": "HTML/CSS/JS"
+    },
+    {
+      "id": 1,
+      "img": "/assets/images/sass.png",
+      "name": "SASS"
+    },
+    {
+      "img": "/assets/images/react.png",
+      "name": "REACT",
+      "id": 3
+    }
+  ]
+}
