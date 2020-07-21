@@ -3,7 +3,7 @@
   width: 100%;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
+
   justify-content: center;
   align-items: center;
 
@@ -14,11 +14,12 @@
     cursor: pointer;
     display: block;
     div {
+      font-size: 14px;
       background-color: #555;
       color: #fff;
       text-transform: uppercase;
       text-decoration: none;
-      padding: 20px 50px;
+      padding: 20px 10px;
     }
   }
 }

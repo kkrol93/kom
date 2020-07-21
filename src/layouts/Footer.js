@@ -1,7 +1,7 @@
 import React from 'react';
 import '../assets/styles/Footer.scss';
 import { faEnvelope, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import cv from '../assets/files/cv.pdf';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -23,6 +23,14 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            <a
+              href="https://github.com/kkrol93"
+              target="_blank"
+              className="github"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faGithub} />
             </a>
             <a href={cv} target="_blank" className="cv" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGraduationCap} />

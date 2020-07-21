@@ -20,6 +20,7 @@ export function authentication(state = initialState, action) {
     case LOGIN_FAILURE:
       return {
         ...state,
+        loggedIn: false,
       };
     case LOGOUT:
       return {

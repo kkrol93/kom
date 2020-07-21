@@ -27,7 +27,7 @@ footer {
         .footer__panel-social {
           display: flex;
           justify-content: space-between;
-          max-width: 150px;
+          max-width: 170px;
           a {
             &.linkedin {
               color: #0177b5;
@@ -35,10 +35,16 @@ footer {
                 color: #1288c6;
               }
             }
-            &.cv {
+            &.github {
               color: #fff;
               &:hover {
-                color: #eee;
+                color: #555;
+              }
+            }
+            &.cv {
+              color: #9c1212;
+              &:hover {
+                color: #8b0101;
               }
             }
             svg {

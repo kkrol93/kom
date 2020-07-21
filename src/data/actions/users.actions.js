@@ -1,5 +1,4 @@
 import { LOGIN_REQUEST, LOGIN_SUCCESS, LOGIN_FAILURE, LOGOUT } from '../constans';
-// import { alertActions } from './';
 import history from '../../helpers/history';
 
 export const login = (email, password) => async (dispatch) => {
@@ -13,31 +12,26 @@ export const login = (email, password) => async (dispatch) => {
     body: JSON.stringify({ email, password }),
   })
     .then((resp) => resp.json())
+
     .then((data) => {
-      // login successful if there's a jwt token in the response
-      if (data.message) {
-        dispatch({ type: LOGIN_FAILURE });
-
-        // Here you should have logic to handle invalid login credentials.
-        // This assumes your Rails API will return a JSON object with a key of
-        // 'message' if there is an error
-      } else {
-        sessionStorage.setItem('token', data.accessToken);
-
+      if (data) {
         dispatch({
           type: LOGIN_SUCCESS,
           payload: {
             data,
           },
         });
+        sessionStorage.setItem('token', data.accessToken);
         history.push('/admin');
       }
+    })
+    .catch((error) => {
+      dispatch({ type: LOGIN_FAILURE });
     });
 };
 
 export const logOut = () => (dispatch) => {
   dispatch({ type: LOGOUT });
-
   sessionStorage.removeItem('token');
 
   history.push('/');
